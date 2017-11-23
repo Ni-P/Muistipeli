@@ -16,5 +16,7 @@ namespace Muistipeli
             _name = name;
             _imgPath = imgPath;
         }
+
+        public string ImgPath { get => _imgPath; set => _imgPath = value; }
     }
 }
