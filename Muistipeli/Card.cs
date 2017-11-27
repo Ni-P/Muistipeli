@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Author: Niko Pinnis
+// Licence: MIT
+
+
 namespace Muistipeli
 {
     class Card
