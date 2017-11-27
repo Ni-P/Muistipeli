@@ -8,10 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// Author: Niko Pinnis
-// Licence: MIT
-
-
 namespace Muistipeli
 {
     public partial class MainWindow : Form
