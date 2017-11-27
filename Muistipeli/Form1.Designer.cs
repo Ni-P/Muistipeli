@@ -30,10 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,6 +55,10 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.AttemptsLabel = new System.Windows.Forms.Label();
+            this.delayTimer = new System.Windows.Forms.Timer(this.components);
+            this.VictoryLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -84,12 +85,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // flowLayoutPanel1
             // 
@@ -121,25 +116,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(430, 458);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(450, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "btn_newgame";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Btn_newgame_click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(569, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // pictureBox1
             // 
@@ -477,12 +453,51 @@
             this.pictureBox24.TabStop = false;
             this.pictureBox24.Click += new System.EventHandler(this.PictureBox24_click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(487, 244);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 38);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "UUSI PELI";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Btn_newgame_click);
+            // 
+            // AttemptsLabel
+            // 
+            this.AttemptsLabel.AutoSize = true;
+            this.AttemptsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AttemptsLabel.Location = new System.Drawing.Point(466, 16);
+            this.AttemptsLabel.Name = "AttemptsLabel";
+            this.AttemptsLabel.Size = new System.Drawing.Size(170, 31);
+            this.AttemptsLabel.TabIndex = 2;
+            this.AttemptsLabel.Text = "0 YRITYSTÄ";
+            // 
+            // delayTimer
+            // 
+            this.delayTimer.Interval = 200;
+            this.delayTimer.Tick += new System.EventHandler(this.DelayTimerTick);
+            // 
+            // VictoryLabel
+            // 
+            this.VictoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VictoryLabel.Location = new System.Drawing.Point(449, 93);
+            this.VictoryLabel.MinimumSize = new System.Drawing.Size(0, 48);
+            this.VictoryLabel.Name = "VictoryLabel";
+            this.VictoryLabel.Size = new System.Drawing.Size(187, 145);
+            this.VictoryLabel.TabIndex = 3;
+            this.VictoryLabel.Text = "Onneksi Olkoon! Kaikki kortit on auki! Haluatko pelata uudestaan?";
+            this.VictoryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VictoryLabel.Visible = false;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 572);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(648, 481);
+            this.Controls.Add(this.VictoryLabel);
+            this.Controls.Add(this.AttemptsLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "MainWindow";
@@ -518,8 +533,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -546,7 +559,9 @@
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label AttemptsLabel;
+        private System.Windows.Forms.Timer delayTimer;
+        private System.Windows.Forms.Label VictoryLabel;
     }
 }
 
