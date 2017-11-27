@@ -63,9 +63,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _0 {
+        internal static System.Drawing.Bitmap kuva1 {
             get {
-                object obj = ResourceManager.GetObject("0", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _12 {
+        internal static System.Drawing.Bitmap kuva10 {
             get {
-                object obj = ResourceManager.GetObject("12", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _16 {
+        internal static System.Drawing.Bitmap kuva11 {
             get {
-                object obj = ResourceManager.GetObject("16", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _20 {
+        internal static System.Drawing.Bitmap kuva12 {
             get {
-                object obj = ResourceManager.GetObject("20", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _24 {
+        internal static System.Drawing.Bitmap kuva2 {
             get {
-                object obj = ResourceManager.GetObject("24", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _28 {
+        internal static System.Drawing.Bitmap kuva3 {
             get {
-                object obj = ResourceManager.GetObject("28", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _32 {
+        internal static System.Drawing.Bitmap kuva4 {
             get {
-                object obj = ResourceManager.GetObject("32", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _36 {
+        internal static System.Drawing.Bitmap kuva5 {
             get {
-                object obj = ResourceManager.GetObject("36", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _4 {
+        internal static System.Drawing.Bitmap kuva6 {
             get {
-                object obj = ResourceManager.GetObject("4", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _40 {
+        internal static System.Drawing.Bitmap kuva7 {
             get {
-                object obj = ResourceManager.GetObject("40", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _44 {
+        internal static System.Drawing.Bitmap kuva8 {
             get {
-                object obj = ResourceManager.GetObject("44", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _48 {
+        internal static System.Drawing.Bitmap kuva9 {
             get {
-                object obj = ResourceManager.GetObject("48", resourceCulture);
+                object obj = ResourceManager.GetObject("kuva9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,19 +183,9 @@ namespace Muistipeli.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _52 {
+        internal static System.Drawing.Bitmap taka {
             get {
-                object obj = ResourceManager.GetObject("52", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _8 {
-            get {
-                object obj = ResourceManager.GetObject("8", resourceCulture);
+                object obj = ResourceManager.GetObject("taka", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

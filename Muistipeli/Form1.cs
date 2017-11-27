@@ -18,7 +18,7 @@ namespace Muistipeli
         int remainingpairs = 0;
         int tries = 0; // how many mistakes made
         bool allowCardOpening = false; // allow clicking cards
-        string backgroundImage = @".\res\52.png";
+        string backgroundImage = @".\res\taka.jpg";
         int match1 = -1; // first card of found pair
         int match2 = -1; // second card of found pair
 
@@ -41,18 +41,18 @@ namespace Muistipeli
             List<string> images = new List<string>();
 
             // load all the paths for the images in the game
-            images.Add(@".\res\0.png");
-            images.Add(@".\res\4.png");
-            images.Add(@".\res\8.png");
-            images.Add(@".\res\12.png");
-            images.Add(@".\res\16.png");
-            images.Add(@".\res\20.png");
-            images.Add(@".\res\24.png");
-            images.Add(@".\res\28.png");
-            images.Add(@".\res\32.png");
-            images.Add(@".\res\36.png");
-            images.Add(@".\res\40.png");
-            images.Add(@".\res\44.png");
+            images.Add(@".\res\kuva1.jpg");
+            images.Add(@".\res\kuva2.jpeg");
+            images.Add(@".\res\kuva3.jpg");
+            images.Add(@".\res\kuva4.jpg");
+            images.Add(@".\res\kuva5.jpg");
+            images.Add(@".\res\kuva6.jpg");
+            images.Add(@".\res\kuva7.jpg");
+            images.Add(@".\res\kuva8.jpg");
+            images.Add(@".\res\kuva9.jpg");
+            images.Add(@".\res\kuva10.jpg");
+            images.Add(@".\res\kuva11.jpg");
+            images.Add(@".\res\kuva12.jpg");
 
             // for each image found make a new Card with imagepath and filename as imagename
             cards = new List<Card>();
@@ -456,5 +456,18 @@ namespace Muistipeli
             }
         }
 
+        private void RevealCardsButtonClick(object sender, EventArgs e)
+        {
+            foreach(Card c in slots)
+            {
+                c.IsMatched = true;
+                c.IsOpen = true;
+            }
+            for (int i = 0; i < boxes.Count; i++) {
+                boxes[i].ImageLocation = slots[i].ImgPath;
+            }
+            allowCardOpening = false;
+            delayTimer.Enabled = false;
+        }
     }
 }
